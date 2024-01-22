@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta name="description" content="Urban wildlife,Edge Miano,Jourdan Co,Animals,Nature,Wilflife,Pets,Exotic Pets">
+    <meta name="keywords" content="Urban wildlife,Edge Miano,Jourdan Co,Animals,Nature,Wilflife,Pets,Exotic Pets">
+    <meta name="author" content="Edge Miano,Jourdan Co">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanWildlifeBlogs</title>
+    <link rel="icon" href="animal.png" type="image/x-icon">
+    <link rel="stylesheet" href="style4.css">       
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <h1>Urban Wildlife Blogs</h1>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="bird2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="bird.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="bee.jpeg" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+<div class="container">
+    <section id="main">
+        <h2>Welcome to Urban Wildlife Blogs!</h2>
+        <p>Urban Wildlife Blogs is a private blog website made by BSIT College students,Edge Miano and Jourdan Co which it’s main attraction is daily updates on the nature and wildlife that can be found in an Urban Setting.Our website also exposes our users on the hobbyist community of both exotic and non-exotic pet keeping.Some of these animals include caterpillars,dogs,snakes,frogs,betta fish and much more.Our goal is to encourage people to go outdoors and expose themselves to Nature as well as raise awareness to the wonder and beauty of our mother earth.In this site.We offer galleries of all the animals that we encounter as well as give you a preview about our pets and insights on how to breed, keep or maintain them.For more info,Follow us on our Socials!</p>
+    </section>
+    <h2>Recent Updates</h2>
+    <table>
+    <tr>
+      <td><img src="bee.jpeg" style="width: 200px;"></td>
+      <td><h4>A bee i found in the garden just right now</h4></td>
+    </tr>
+
+    <tr>
+      <td><img src="bird.jpg" style="width: 200px;"></td>
+      <td><h4>I love birds</h4></td>
+    </tr>
+
+    <tr>
+      <td><img src="bird2.jpg" style="width: 200px;"></td>
+      <td><h4>I found a wonderful and majestic bird that encapsulates nature!!!</h4></td>
+    </tr>
+    </table>
+</div>
+
+  
+
+    <footer id="main-footer">
+        <p>Follow us on</p>
+        <a href="https://facebook.com"><img src="facebook.png" style="width:40px"></a>
+        <a href="https://twitter.com"><img src="twitter.png" style="width:40px"></a>
+        <a href="https://instagram.com"><img src="instagram.png" style="width:40px"></a>
+   
+    </footer>
+</body>
+</html>>
+<DOCTYPE html>
+  <html>
+  <style>
+  .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: tomato;
+  }
+  
+  .footer {
+    background: lightgreen;
+  }
+  
+  .main {
+    text-align: left;
+    background: deepskyblue;
+  }
+  
+  .aside-1, .meside-1 {
+    background: gold;
+  }
+  
+  .aside-2, .meside-2 {
+    background: hotpink;
+  }
+    .meside-1 { order: 1; }
+    .meside-2 { order: 2; }
+    .main { order: 3; }
+    .aside-1 { order: 4; } 
+    .aside-2 { order: 5; }
+    .footer  { order: 6; }
+  
+  @media all and (min-width: 600px) {
+    .aside, .menu { flex: 1 0 0; }
+    .meside-1 { order: 1; }
+    .meside-2 { order: 2; }
+    .main { order: 3; }
+    .aside-1 { order: 4; } 
+    .aside-2 { order: 5; }
+    .footer  { order: 6; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .meside-1 { order: 1; }
+    .meside-2 { order: 2; }
+    .aside-1 { order: 3; }
+    .main { order: 4; }   
+    .aside-2 { order: 5; }
+    .footer  { order: 6; }
+  }
+  
+  body {
+    padding: 2em; 
+  }
+  </style>
+  
+  <body>
+  <div class="wrapper">
+    <header class="header">Header</header>
+    <aside class="menu meside-1">Menu 1</aside>
+    <aside class="menu meside-2">Menu 2</aside>
+    <article class="main">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+    </article>
+    <aside class="aside aside-1">Aside 1</aside>
+    <aside class="aside aside-2">Aside 2</aside>
+    <footer class="footer">Footer</footer>
+  </div>
+  </body>
+  </html>
